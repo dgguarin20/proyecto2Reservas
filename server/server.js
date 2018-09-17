@@ -48,7 +48,7 @@ app.use(express.json());
 require('./routes')(app);
 
 if (isDev) {
-  const compiler = webpack(webpackConfig);
+  const compiler = webpack(webpackConfig).catch(error => console.error(error));
 
   app.use(historyApiFallback({
     verbose: false
