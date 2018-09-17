@@ -43,3 +43,4 @@ Development (Webpack dev server) mode:
 ```shell
 npm run start:dev
 ```
+https://limitless-waters-44501.herokuapp.com/
