@@ -11,7 +11,7 @@ const config = require('../config/config');
 const webpackConfig = require('../webpack.config');
 
 const isDev = process.env.NODE_ENV !== 'production';
-const port  = process.env.PORT || 5000;
+const port  = process.env.PORT || 3000;
 
 
 const Uri = 'mongodb://creador:creador1@ds261072.mlab.com:61072/mongo';
