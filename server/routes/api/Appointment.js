@@ -8,7 +8,7 @@ module.exports = (app) => {
 
 //--------------------------------------------------------------------------
 // UPDATE APPOINTMENT
-
+//No esta siendo RESTful el api, no deberian usar verbos, solo hacer el put sobre appointment
 app.put('/appointment/update', (req, res, next)=>{
 	const { body } = req;
     let {
@@ -46,6 +46,7 @@ app.put('/appointment/update', (req, res, next)=>{
  });
 //-------------------------------------------------------------------------
 //-----DELETE APPOINTMENT
+  //volver RESTful
 app.delete('/appointment/remove', (req, res, next) => {
 	const { query } = req;
 	let { _id } = query;
@@ -141,6 +142,7 @@ app.delete('/appointment/remove', (req, res, next) => {
 
 //-----------------------------------------------------------------------------
 //CREATE APPOINTMENT
+  //Volver RESTful
 app.post('/api/appointment/create', (req, res, next) => {
 	const { body } = req;
     let {
