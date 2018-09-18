@@ -5,3 +5,5 @@ const HelloWorld = () => (
 );
 
 export default HelloWorld;
+
+//¿DÓNDE SE USA ESTE COMPONENTE?
