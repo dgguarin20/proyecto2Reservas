@@ -2,6 +2,9 @@
 const User = require('../../models/User');
 const UserSession = require('../../models/UserSession');
 module.exports = (app) => {
+  
+//Muy bien implementado en cada router una descripción del método HTTP, sin embargo en este router sería pertinente comentar que
+//hace cada ruta.
 //-----------------------------------------------------------------------
 
 app.get('/api/account/getMPerson', (req, res, next) =>{
